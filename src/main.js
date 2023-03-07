@@ -4,6 +4,7 @@ import "./main.css"
 import Personal from './allComponent/Personal';
 import Career from './allComponent/Career';
 import Educate from './allComponent/Educate';
+import Addition from './allComponent/Addition';
 
 
 
@@ -24,7 +25,7 @@ const Main = () =>{
         },
         {
             title: "Qo'shimcha ma'lumotlar",
-            content: 'Last-content',
+            content: <Addition/>,
           },
       ];
 
@@ -52,7 +53,7 @@ const Main = () =>{
 
     return(
         <div className="conteiner-fluid">
-            <div className="row mt-5" style={{ display:"flex",justifyContent:"center",padding:"0",margin:"0"}}>
+            <div className="row mt-5 mb-3" style={{ display:"flex",justifyContent:"center",padding:"0",margin:"0"}}>
                 <div className="col-12 col-sm-12 col-md-10 col-lg-6 col-xl-6 col-xxl-6">
                 <Steps  current={current} items={items} />
                         <div style={{contentStyle, backgroundColor:"white", padding:"20px", margin:"20px 0"}}>{steps[current].content}</div>

@@ -10,8 +10,6 @@ const Career = () =>{
     const [rahbar, setRahbar] = useState("")
     const [boshqa, setBoshqa] = useState("")
     const [rektor, setRektor] = useState("")
-    const [qoldiq, setQoldiq] = useState("")
-    const [butun, setButun] = useState("")
 
     let a = pedagok, b = rahbar, c = boshqa, d = rektor;
     let birinchi = (a + b + c + d) / 12
